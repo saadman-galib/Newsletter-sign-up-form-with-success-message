@@ -1,19 +1,121 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #36384D;
+@font-face {
+    font-family: Roboto;
+    src: url("./assets/fonts/Roboto-Regular.ttf"),
+        url("./assets/fonts/Roboto-Bold.ttf");
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color: #FFFFFF;
+body {
+    background-color: hsl(235, 18%, 26%);
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 850px;
+    height: 650px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 35px;
+    font-family: Roboto, sans-serif;
+}
+
+.left-part {
+    padding-left: 50px;
+}
+
+.right-part {
+    padding-right: 20px;
+}
+
+.text-heading {
+    color: hsl(234, 29%, 20%);
+}
+
+.text-heading h1 {
+    font-size: 50px;
+}
+
+.text-heading p {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 25px 0;
+}
+
+.text-heading,
+.list-items,
+.input-container {
+    width: 90%;
+}
+
+.list-items{
+    margin: 30px 0;
+}
+
+.list-items ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+    color: hsl(234, 29%, 20%);
+}
+
+.list-items p {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    color: hsl(234, 29%, 20%);
+}
+
+.input-container label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.input-container input{
+    padding: 15px 20px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 8px;
+    margin: 12px 0;
+    font-size: 16px;
+    transition: 0.3s;
+    outline: none;
+    
+}
+
+.input-container input::placeholder{
+    color: hsl(231, 7%, 60%);
+    font-size: 15px;
+}
+
+.input-container input:focus{
+    color: hsl(234, 29%, 20%);
+    border-color: hsl(234, 29%, 20%);
+}
+
+.input-container button{
+    background-color: hsl(234, 29%, 20%);
+    padding: 18px 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
 }
