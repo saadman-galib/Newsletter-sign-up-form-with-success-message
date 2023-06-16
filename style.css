@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    display: none !important;
+    /* display: none !important; */
     width: 850px;
     height: 650px;
     background-color: #ffffff;
@@ -125,6 +125,7 @@ body {
 }
 
 .success-container{
+    display: none !important;
     width: 500px;
     height: 500px;
     background-color: #fff;

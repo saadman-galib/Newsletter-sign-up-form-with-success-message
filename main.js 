@@ -1,0 +1,7 @@
+const email = document.getElementById("email");
+const submitBtn = document.getElementById("submitBtn");
+
+submitBtn.addEventListener("click", () => {
+    // console.log(email.value);
+    console.log("HI")
+});
