@@ -17,9 +17,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Roboto, sans-serif;
 }
 
 .container {
+    display: none !important;
     width: 850px;
     height: 650px;
     background-color: #ffffff;
@@ -28,7 +30,6 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 35px;
-    font-family: Roboto, sans-serif;
 }
 
 .left-part {
@@ -59,7 +60,7 @@ body {
     width: 90%;
 }
 
-.list-items{
+.list-items {
     margin: 30px 0;
 }
 
@@ -87,7 +88,7 @@ body {
     font-weight: bold;
 }
 
-.input-container input{
+.input-container input {
     padding: 15px 20px;
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 8px;
@@ -95,20 +96,19 @@ body {
     font-size: 16px;
     transition: 0.3s;
     outline: none;
-    
 }
 
-.input-container input::placeholder{
+.input-container input::placeholder {
     color: hsl(231, 7%, 60%);
     font-size: 15px;
 }
 
-.input-container input:focus{
+.input-container input:focus {
     color: hsl(234, 29%, 20%);
     border-color: hsl(234, 29%, 20%);
 }
 
-.input-container button{
+.input-container button {
     background-color: hsl(234, 29%, 20%);
     padding: 18px 40px;
     color: #fff;
@@ -117,5 +117,44 @@ body {
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
 
+.input-container button:hover {
+    background-image: linear-gradient(to right, #ff5379, #ff673e);
+}
+
+.success-container{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 35px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(234, 29%, 20%);
+
+}
+
+.success-container img{
+    width: 50px;
+    height: 50px;
+}
+
+.success-container h1{
+    margin-top: 25px;
+    font-size: 50px;
+    /* line-height: 66px; */
+}
+
+.success-container p{
+    font-size: 15px;
+    line-height: 22px;
+    margin: 25px 0;
+}
+
+.success-container p span{
+    font-weight: bold;
 }
